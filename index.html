@@ -1,0 +1,256 @@
+<!-- Christian's Portfolio 
+  -- @author Christian Le -->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns:fb="http://ogp.me/ns/fb#">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Christian Le" />
+        <meta property="og:image" content="favicon.png" />
+        <meta name=viewport content="width=device-width, initial-scale=1">
+
+        <title>Christian Le</title>
+        
+        <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/christian.css" media="(min-device-width: 768px)"/>
+        <link rel="stylesheet" href="css/christianphone.css" media="(max-device-width: 767px)"/>
+    </head>
+
+
+    <header>
+        <h1 class="typewriter">
+            Photography &amp; Web Design<span class="blink">&nbsp;</span>
+        </h1>
+    </header>
+
+    <footer>
+        Christian Le
+    </footer>
+
+    <body>
+        <div class="greg" id="greg"><img src="greg.png" /></div>
+        <div class="greg" id="happy">HAPPY BIRTHDAY!</div>
+        <div class="greg" id="div">div...</div>
+        <div class="greg" id="div2">div...</div>
+        <div class="greg" id="div3">div...</div>
+        <div class="greg" id="div4">div...</div>
+        <div class="greg" id="div5">div...</div>
+        <div class="greg" id="div6">div...</div>
+        <div id="navigation">
+            <div class="circle photo_circle"><a href="/photo/"><img src="./img/photo.png"/></a></div>
+            <div class="circle web_circle"><a href="/web/"><img src="./img/web.png"/></a></div>
+            <div class="circle about_circle"><a href="/about/"><img src="./img/about.png"/></a></div>
+            <div class="circle contact_circle"><a href="/contact/"><img src="./img/contact.png"/></a></div>
+        </div>
+    </body>
+
+    <script src="js/jquery-2.0.3.min.js"></script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-49527002-1', 'christianle.com');
+        ga('send', 'pageview');
+    </script>
+    <script type="text/javascript">
+        $( document ).ready(function(){
+
+            var four = 0;
+         
+            $(document).keydown(function(evt){
+                var keycode = evt.which;
+                if (keycode == 71 || keycode == 82 || keycode == 69 || keycode == 71) {
+                    four += 1;
+                }
+            });
+
+            $(document).keyup(function(evt){
+                var keycode = evt.which;
+                if (keycode == 13) {
+                    if (four == 4) {
+                        $('.greg').show();
+                        four = 0;
+                    }
+                }
+            });
+
+            $(document).keyup(function(evt){
+                var keycode = evt.which;
+                if (keycode == 27) {
+                    $('.greg').hide();
+                    four = 0;
+                }
+            });
+        });
+    </script>
+
+    <script>
+        window.setInterval(function(){
+            var docHeight = $(document).height(),
+                docWidth = $(document).width(),
+                $div = $('#happy'),
+                divWidth = $div.width(),
+                divHeight = $div.height(),
+                heightMax = docHeight - divHeight,
+                widthMax = docWidth - divWidth;
+            
+            $div.css({
+                left: Math.floor( Math.random() * widthMax ),
+                top: Math.floor( Math.random() * heightMax )
+            });
+        }, 500);
+
+        window.setInterval(function(){
+            var docHeight = $(document).height(),
+                docWidth = $(document).width(),
+                $div = $('#div'),
+                divWidth = $div.width(),
+                divHeight = $div.height(),
+                heightMax = docHeight - divHeight,
+                widthMax = docWidth - divWidth;
+            
+            $div.css({
+                left: Math.floor( Math.random() * widthMax ),
+                top: Math.floor( Math.random() * heightMax )
+            });
+        }, 300);
+
+        window.setInterval(function(){
+            var docHeight = $(document).height(),
+                docWidth = $(document).width(),
+                $div = $('#div2'),
+                divWidth = $div.width(),
+                divHeight = $div.height(),
+                heightMax = docHeight - divHeight,
+                widthMax = docWidth - divWidth;
+            
+            $div.css({
+                left: Math.floor( Math.random() * widthMax ),
+                top: Math.floor( Math.random() * heightMax )
+            });
+        }, 200);
+
+        window.setInterval(function(){
+            var docHeight = $(document).height(),
+                docWidth = $(document).width(),
+                $div = $('#div3'),
+                divWidth = $div.width(),
+                divHeight = $div.height(),
+                heightMax = docHeight - divHeight,
+                widthMax = docWidth - divWidth;
+            
+            $div.css({
+                left: Math.floor( Math.random() * widthMax ),
+                top: Math.floor( Math.random() * heightMax )
+            });
+        }, 600);
+
+        window.setInterval(function(){
+            var docHeight = $(document).height(),
+                docWidth = $(document).width(),
+                $div = $('#div4'),
+                divWidth = $div.width(),
+                divHeight = $div.height(),
+                heightMax = docHeight - divHeight,
+                widthMax = docWidth - divWidth;
+            
+            $div.css({
+                left: Math.floor( Math.random() * widthMax ),
+                top: Math.floor( Math.random() * heightMax )
+            });
+        }, 300);
+
+        window.setInterval(function(){
+            var docHeight = $(document).height(),
+                docWidth = $(document).width(),
+                $div = $('#div5'),
+                divWidth = $div.width(),
+                divHeight = $div.height(),
+                heightMax = docHeight - divHeight,
+                widthMax = docWidth - divWidth;
+            
+            $div.css({
+                left: Math.floor( Math.random() * widthMax ),
+                top: Math.floor( Math.random() * heightMax )
+            });
+        }, 400);
+
+        window.setInterval(function(){
+            var docHeight = $(document).height(),
+                docWidth = $(document).width(),
+                $div = $('#div6'),
+                divWidth = $div.width(),
+                divHeight = $div.height(),
+                heightMax = docHeight - divHeight,
+                widthMax = docWidth - divWidth;
+            
+            $div.css({
+                left: Math.floor( Math.random() * widthMax ),
+                top: Math.floor( Math.random() * heightMax )
+            });
+        }, 200);
+    </script>
+
+
+    <!-- Old -->
+    
+    <!-- Header Section -->
+<!--     <header class="wrapper">
+        <section id="home-header">
+            My life would be nothing without photography, design, and computer science.
+            <br>
+            <p>- Christian Le</p>
+        </section>
+    </header> -->
+
+    <!-- Body -->
+<!--     <body>
+        <div id="bodywrapper">
+            <section id="home-body" class="grid">
+                <a href="/photo/" id="grid-photo" class="square">
+                    <div class="homeouter">
+                        <div class="homemiddle overlaytext">
+                            <div>
+                                Photography
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/web/" id="grid-web" class="square">
+                    <div class="homeouter">
+                        <div class="homemiddle overlaytext">
+                            <div>
+                                Web Design
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href= "/about/" id="grid-about" class="square">
+                    <div class="homeouter">
+                        <div class="homemiddle overlaytext">
+                            <div>
+                                About
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/contact/" id="grid-contact" class="square">
+                    <div class="homeouter">
+                        <div class="homemiddle overlaytext">
+                            <div>
+                                Contact
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </section>
+        </div>
+    </body> -->
+    
+</html>

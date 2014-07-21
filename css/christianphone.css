@@ -1,0 +1,243 @@
+/* Main Phone style sheet for Christian's Portfolio
+ *  @author Christian Le */
+
+
+@font-face {
+    font-family: Monaco, Consolas, "Lucida Console", monospace;
+}
+
+body, html {
+    background: #fff;
+    width: 100%;
+}
+
+a, a:hover, a:link {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+header {
+    text-align: center;
+    z-index: 1;
+}
+
+.typewriter {
+    margin: 0 auto;
+    margin-top: 5vh;
+    padding-bottom: 10vh;
+    text-align: center;
+    line-height: 2em;
+    font: 1.7em Consolas, Monaco, monospace;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 94%;
+    z-index: 12;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 18px;
+    opacity: 1;
+}
+
+#navigation {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.circle {
+    margin: 20px 20px 0px 20px;
+    display: inline-block;
+    border-radius: 50%;
+    width: 20vh;
+    height: 20vh;
+    background: #ccc;
+    text-align: center;
+
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    transition: background 0.5s;
+}
+
+.circle img {
+    padding-top: 2.5vh;
+    width: 15vh;
+    margin: 0 auto;
+}
+
+@keyframes appear {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes appear {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes appear {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.photo_circle {
+    opacity: 0;
+    -webkit-animation: appear 0.5s 0s;
+    -moz-animation: appear 0.5s 0s;
+    animation: appear 0.5s 0s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.photo_circle:hover {
+    background: #CC0000;
+}
+
+.web_circle {
+    opacity: 0;
+    -webkit-animation: appear 0.5s 0.5s;
+    -moz-animation: appear 0.5s 0.5s;
+    animation: appear 0.5s 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.web_circle:hover {
+    background: #33B5E5;
+}
+
+.about_circle {
+    opacity: 0;
+    -webkit-animation: appear 0.5s 1s;
+    -moz-animation: appear 0.5s 1s;
+    animation: appear 0.5s 1s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.about_circle:hover {
+    background: #99CC00;
+}
+
+.contact_circle {
+    opacity: 0;
+    -webkit-animation: appear 0.5s 1.5s;
+    -moz-animation: appear 0.5s 1.5s;
+    animation: appear 0.5s 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.contact_circle:hover {
+    background: #FFBB33;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to { 
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.greg {
+    display: none;
+    font-family: Consolas;
+}
+
+#happy {
+    position: absolute;
+    color: #ff69b4;
+    height: 1em;
+    font-size: 5em;
+    z-index: 100000000000000000000;
+}
+
+#div {
+    position: absolute;
+    color: #111;
+    height: 1em;
+    font-size: 3em;
+    z-index: 100000000000000000000;
+}
+
+#div2 {
+    position: absolute;
+    color: #37FDFC;
+    height: 1em;
+    font-size: 3em;
+    z-index: 100000000000000000000;
+}
+
+#div3 {
+    position: absolute;
+    color: #7FFF00;
+    height: 1em;
+    font-size: 3em;
+    z-index: 100000000000000000000;
+}
+
+#div4 {
+    position: absolute;
+    color: #ffa500;
+    height: 1em;
+    font-size: 3em;
+    z-index: 100000000000000000000;
+}
+
+#div5 {
+    position: absolute;
+    color: #ff0000;
+    height: 1em;
+    font-size: 3em;
+    z-index: 100000000000000000000;
+}
+
+#div6 {
+    position: absolute;
+    color: #0276FD;
+    height: 1em;
+    font-size: 3em;
+    z-index: 100000000000000000000;
+}
+
+#greg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: 1000000000000;
+}
+
+#greg img {
+    height: 70vh;
+    margin: 7% auto;
+    text-align: center;
+    -webkit-animation-name:             rotate; 
+    -webkit-animation-duration:         2s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: linear;
+
+    -moz-animation-name:             rotate; 
+    -moz-animation-duration:         2s; 
+    -moz-animation-iteration-count:  infinite;
+    -moz-animation-timing-function: linear;
+    z-index: 1000000000000;
+}

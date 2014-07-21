@@ -1,0 +1,220 @@
+/** Main style sheet for Christian's Portfolio
+ *  @author Christian Le */
+
+body, html {
+    background: #fff;
+}
+
+a, a:link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out; }
+
+a:hover {
+  color: #CC0000; }
+
+#popup-window {
+    background: rgba(0, 0, 0, 0.72);
+    left: 0;
+    margin-left: -9000px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    text-align: center;
+}
+
+#popup {
+    border: 5px solid rgba(255, 255, 255, 0.35);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: rgba(255, 255, 255, 0);
+    z-index: 100;
+}
+
+header {
+    position: fixed;
+    top: 3%;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+}
+
+#burger {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    background: rgba(255, 255, 255, 0);
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.hamburger {
+    margin: 0.3em 0.2em;
+    display: inline-block;
+    border-radius: 50%;
+    width: 0.75em;
+    height: 0.75em;
+    background: #ddd;
+    z-index: 10000;
+    text-align: center;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+#nav:hover > #burger .hamburger {
+    background: #CC0000;
+}
+
+#main_nav {
+    opacity: 0;
+    z-index: 0;
+
+    transition: opacity 0.3s 0.1s linear;
+    -webkit-transition: opacity 0.3s 0.1s linear;
+    -moz-transition: opacity 0.3s 0.1s linear;
+    -o-transition: opacity 0.3s 0.1s linear;
+}
+
+#main_nav ul {
+    position: relative;
+    clear: both;
+}
+
+#main_nav ul li {
+    position: relative;
+    font-size: 1.45em;
+    font-family: Consolas, Monaco, monospace;
+    padding: 0 15px;
+    display: inline;
+    cursor: pointer;
+}
+
+#main_nav ul li:hover {
+    color: #CC0000;
+}
+
+#nav:hover > #main_nav {
+    opacity: 1;
+    z-index: 1001;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 94%;
+    z-index: 10000;
+}
+
+#footer {
+    font-family: Consolas, Monaco, monospace;
+    font-size: 1.2em;
+    z-index: 10000;
+}
+
+#photo_nav {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 83vh;
+    z-index: 10000;
+}
+
+#photo_nav ul {
+    position: relative;
+    clear: both;
+    z-index: 10000;
+}
+
+#photo_nav ul li {
+    position: relative;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding: 0 1em;
+    display: inline;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+#photo_nav ul li.active {
+    position: relative;
+    font-weight: 400;
+    color: #777;
+    z-index: 10000;
+}
+
+#photo_nav ul li:hover {
+    color: #CC0000;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+    z-index: 1;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    width: 100vw;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.content img {
+    position: relative;
+    display: inline-block;
+    height: 60vh;
+    padding-left: 1vh;
+    z-index: 10;
+}
+
+.square {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: 25px;
+    line-height: 60vh;
+    height: 60vh;
+    width: 60vh;
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    border: 5px solid #ddd;
+    color: #999;
+    margin-left: 1vh;
+    z-index: 10;
+}
+
+.square img {
+    margin-top: 5vh;
+    height: 50vh;
+}
+
+.margin_right {
+    padding-right: 1vh;
+}

@@ -1,0 +1,117 @@
+<!-- Christian's Portfolio 
+  -- @author Christian Le -->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns:fb="http://ogp.me/ns/fb#">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Christian Le" />
+        <meta property="og:image" content="../favicon.png" />
+        <meta name=viewport content="width=device-width, initial-scale=1">
+
+        <title>Christian Le</title>
+        
+        <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="css/about.css" media="(min-device-width: 768px)" />
+        <link rel="stylesheet" href="css/aboutphone.css" media="(max-device-width: 767px)" />
+    </head>
+    
+    <!-- Menu -->
+    <header>
+        <div id="nav">
+            <div id="burger">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+            <nav id="main_nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/photo/">Photography</a></li>
+                    <li><a href="/web/">Web Design</a></li>
+                    <li><a href="/contact/">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Body -->
+    <body>
+        <div class="outer">
+            <div class="middle">
+                <div class="content">
+                    <div>
+                        <div id="student_start" class="circ green">Hi!</div>
+                        <div class="circ me"><div class="hovertext">My name is Christian.</div></div>
+                        <div class="circ cal"><div class="hovertext">I'm a student at UC Berkeley...</div></div>
+
+                        <div id="designer_start" class="circ cs"><div class="hovertext">studying computer science...</div></div>
+
+                        <div id="photographer_start" class="circ photog margin_right"><div class="hovertext">with a passion for photography.</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- <body>
+        <section id="about-me">
+            <div class="outer">
+                <div class="middle">
+                    <div class="about">
+                        <div class="title">Student</div></br>Hi! I'm Christian, a student at the University of California, Berkeley studying computer science. I have a deep passion for technology, well-designed anything, and photography.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-photo">
+            <div class="outer">
+                <div class="middle">
+                    <div class="about">
+                        <div class="title">Photographer</div></br>Photography is more than a hobby to me, it's my escape. Rarely am I without my camera. Photography isn't about capturing pictures to me; it isn't about capturing beauty; it's about capturing a moment in a time.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-cs">
+            <div class="outer">
+                <div class="middle">
+                    <div class="about">
+                        <div class="title">Designer</div></br>I'm not the designer you normally think of; my design is heavity influenced by photography and ccs. I design for the sake of simplifying the use of technology: websites, apps, the works.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body> -->
+
+    <!-- Footer -->
+    <footer>
+        <a href="/" id="footer">Christian Le</a>
+    </footer>
+
+    <script src="../js/jquery-2.0.3.min.js"></script>
+    <script src='js/about.js'></script>
+    <script src="../js/jquery.mousewheel.js"></script>
+    <script>
+        $(function(){
+            $("body").mousewheel(function(event, delta) {
+                this.scrollLeft -= (delta * 30);
+                event.preventDefault();
+            });   
+        });
+    </script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-49527002-1', 'christianle.com');
+        ga('send', 'pageview');
+    </script>
+    
+</html>
