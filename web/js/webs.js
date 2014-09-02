@@ -30,33 +30,48 @@ $(document).ready(function () {
         var windowWidth = $(window).width(); // get the height of the window
         var docWidth = $(document).width();
 
-        var web1 = $("div#andieweb").offset().left - 100;
-        var web2 = $("div#web2start").offset().left - 100;
+        var web1 = $("div#innod").offset().left - 100;
+        var web2 = $("div#andieweb").offset().left - 100;
+        var web3 = $("div#web2start").offset().left - 100;
         
         if (windowPos + windowWidth == docWidth) {
             $("#web_nav ul #web2").addClass("active");
             $("#web_nav ul #andie").removeClass("active");
-        } else if (windowPos >= web2) {
+            $("#web_nav ul #innod").removeClass("active");
+        } else if (windowPos >= web3) {
             $("#web_nav ul #web2").addClass("active");
             $("#web_nav ul #andie").removeClass("active");
-        } else if (windowPos >= web1) {
+            $("#web_nav ul #innod").removeClass("active");
+        } else if (windowPos >= web2) {
             $("#web_nav ul #web2").removeClass("active");
             $("#web_nav ul #andie").addClass("active");
+            $("#web_nav ul #innod").removeClass("active");
+        } else if (windowPos >= web1) {
+            $("#web_nav ul #innod").addClass("active");
+            $("#web_nav ul #web2").removeClass("active");
+            $("#web_nav ul #andie").removeClass("active");
         }
+    });
+
+    $("#web_nav ul #innod").click(function(evn){
+        evn.preventDefault();
+        $('html, body').animate({
+            scrollLeft: 0
+        }, 1000); 
     });
 
     $("#web_nav ul #andie").click(function(evn){
         evn.preventDefault();
         $('html, body').animate({
-            scrollLeft: 0
-        }, 1500); 
+            scrollLeft: $("div#andieweb").offset().left
+        }, 1000); 
     });
 
     $("#web_nav ul #web2").click(function(evn){
         evn.preventDefault();
         $('html, body').animate({
             scrollLeft: $("div#web2start").offset().left
-        }, 1500); 
+        }, 1000); 
     });
 
     // // Popup Window
