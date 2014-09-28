@@ -22,10 +22,10 @@ a:active {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-weight: 500;
   color: #3397BF;
-  -webkit-transition: text-decoration 0.2s, color 0.2s;
-  -moz-transition: text-decoration 0.2s, color 0.2s;
-  -o-transition: text-decoration 0.2s, color 0.2s;
-  transition: text-decoration 0.2s, color 0.2s;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
 }
 
 a:hover {
@@ -44,5 +44,16 @@ a:hover {
 
 .home .subheader {
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.home .project {
+  margin-bottom: 20px;
+}
+
+.home .project .title a {
+  font-size: 22px;
+  margin-bottom: 5px;
+  font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+  font-weight: 400;
 }
