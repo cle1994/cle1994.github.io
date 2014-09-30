@@ -34,7 +34,37 @@ a:hover {
 }
 
 .home {
-  padding: 40px;
+  padding: 0px 40px 40px 40px;
+}
+
+.home .logo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  height: 80px;
+  width: 100%;
+}
+
+.home .logo .img {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  height: 60px;
+}
+
+.home .logo .img img {
+  height: 100%;
+}
+
+.home .logo .name {
+  position: absolute;
+  left: 80px;
+  top: 10px;
+  font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 60px;
+  color: #999999;
 }
 
 .home .header {
